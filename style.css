@@ -1,0 +1,122 @@
+/* Polar Paradise Pack — Frozen Dark Theme */
+
+body {
+  background: radial-gradient(circle at top, #0a1119 0%, #050a0f 100%) !important;
+  color: #eaf6ff !important;
+  font-family: 'Trebuchet MS', Arial, sans-serif !important;
+  background-attachment: fixed !important;
+}
+
+/* Banner */
+#header {
+  background: url('https://i.imgur.com/hQUv1rh.jpg') no-repeat center top !important;
+  background-size: cover !important;
+  border-bottom: 2px solid rgba(200,240,255,0.2) !important;
+  height: 250px !important;
+  position: relative !important;
+}
+
+#header:after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(10,20,30,0.6);
+}
+
+/* Pack Name Title */
+#header h1, #header h2 {
+  position: relative;
+  z-index: 2;
+  color: #dff9ff !important;
+  text-shadow: 0 0 10px #b5ecff, 0 0 20px #79d4ff !important;
+  font-size: 40px !important;
+  text-align: center;
+  margin-top: 80px;
+  letter-spacing: 1.5px;
+}
+#header h1::after {
+  content: "Polar Paradise Pack";
+  display: block;
+  font-size: 22px;
+  font-weight: 300;
+  color: #ccecff;
+  text-shadow: 0 0 8px #8adfff;
+  margin-top: 4px;
+}
+
+/* Links */
+a, a:visited {
+  color: #a8e4ff !important;
+  transition: 0.2s;
+}
+a:hover {
+  color: #dffeff !important;
+  text-shadow: 0 0 5px #b6eeff;
+}
+
+/* Den containers */
+.container, .content {
+  background: rgba(15,25,35,0.7) !important;
+  border: 1px solid rgba(180,220,255,0.15) !important;
+  border-radius: 12px !important;
+  padding: 15px !important;
+  box-shadow: 0 0 15px rgba(120,200,255,0.1);
+}
+
+/* Frost border accent */
+.container::before, .content::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 12px;
+  border: 1px solid rgba(180,240,255,0.25);
+  box-shadow: 0 0 15px rgba(150,240,255,0.15);
+  pointer-events: none;
+}
+
+/* Headings */
+h1, h2, h3 {
+  color: #c7efff !important;
+  text-shadow: 0 0 8px rgba(140,220,255,0.4);
+  border-bottom: 1px solid rgba(180,220,255,0.2);
+  padding-bottom: 3px;
+}
+
+/* Wolf boxes */
+table, .wolf, .sidebar, .box {
+  background: rgba(10,20,30,0.7) !important;
+  border: 1px solid rgba(180,220,255,0.15) !important;
+  border-radius: 8px !important;
+}
+
+/* Buttons */
+button, input[type="submit"], input[type="button"] {
+  background: linear-gradient(135deg, #8fd1ff, #bfefff) !important;
+  color: #012330 !important;
+  border: none !important;
+  border-radius: 6px !important;
+  padding: 6px 12px !important;
+  cursor: pointer;
+  transition: 0.2s;
+}
+button:hover, input[type="submit"]:hover {
+  background: linear-gradient(135deg, #bfefff, #dffeff) !important;
+  transform: translateY(-1px);
+}
+
+/* Footer */
+#footer {
+  background: rgba(5,10,15,0.7) !important;
+  color: #9ed9ff !important;
+  border-top: 1px solid rgba(180,220,255,0.1);
+}
+
+/* Frost shimmer animation on hover elements */
+@keyframes frostglow {
+  0% { text-shadow: 0 0 4px #9fefff; }
+  50% { text-shadow: 0 0 10px #bfffff; }
+  100% { text-shadow: 0 0 4px #9fefff; }
+}
+a:hover, h2:hover {
+  animation: frostglow 2s infinite ease-in-out;
+}
